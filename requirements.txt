@@ -6,3 +6,8 @@ apscheduler>=3.10.0
 python-dateutil>=2.8.0
 nltk>=3.8.0
 matplotlib>=3.7.0
+
+# Optional: enables LLM refinement in the email subscription audit agent
+# (email_audit.py). Safe to omit; the agent falls back to rule-based
+# heuristics when this package or ANTHROPIC_API_KEY is unavailable.
+anthropic>=0.40.0
